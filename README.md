@@ -2,6 +2,7 @@
 
 `tree -a`:
 
+```
 .
 ├── bash
 │   ├── .bash_profile
@@ -17,4 +18,4 @@
 │           └── init.vim
 └── vim
     └── .vimrc
-
+```
