@@ -1,0 +1,6 @@
+ 
+[user]
+	name = telarmago
+	email = telarmago@users.noreply.github.com
+[alias]
+	lg = log --graph --pretty=format:'%C(auto)%h %d %s %C(green)(%cr) %C(blue)<%an>' --abbrev-commit
