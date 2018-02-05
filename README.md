@@ -4,6 +4,10 @@
 
 ```
 .
+├── _misc
+│   └── Library
+│       └── KeyBindings
+│           └── DefaultKeyBinding.dict
 ├── bash
 │   ├── .bash_profile
 │   └── .hushlogin
@@ -16,6 +20,8 @@
 │   └── .config
 │       └── nvim
 │           └── init.vim
+├── tmux
+│   └── .tmux.conf
 └── vim
     └── .vimrc
 ```
