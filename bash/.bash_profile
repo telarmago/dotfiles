@@ -1,7 +1,7 @@
-export PS1="\[\033[32m\]\w\n$ \[\033[00m\]"
+export PS1="\[\033[34m\]\w\n\[\033[31m\]> \[\033[00m\]"
 
 # aliases for convenience
-alias ll="ls -al"
+alias ll="ls -Gph -Al"
 alias ..="cd .."
 
 # aliased commands
@@ -20,6 +20,8 @@ alias deletesystemlogs="sudo rm -rfv /private/var/log/"
 alias cleariconcaches="sudo find /private/var/folders/ -name com.apple.dock.iconcache -exec rm {} \;
                        sudo find /private/var/folders/ -name com.apple.iconservices -exec rm -rf {} \;
                        sudo rm -rf /Library/Caches/com.apple.iconservices.store"
+
+alias sleepinfo='pmset -g log | grep -e " Sleep  " -e " Wake  "'
 
 # allow ctrl-s to search forwards; disables XON/XOFF flow control
 stty -ixon
