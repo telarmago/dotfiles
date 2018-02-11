@@ -11,6 +11,9 @@
 ├── bash
 │   ├── .bash_profile
 │   └── .hushlogin
+├── chunkwm
+│   ├── .chunkwmrc
+│   └── .skhdrc
 ├── emacs
 │   └── .emacs.d
 │       └── init.el
