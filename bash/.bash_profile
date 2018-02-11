@@ -23,6 +23,8 @@ alias cleariconcaches="sudo find /private/var/folders/ -name com.apple.dock.icon
 
 alias sleepinfo='pmset -g log | grep -e " Sleep  " -e " Wake  "'
 
+alias whatsize='du -sh *'
+
 # allow ctrl-s to search forwards; disables XON/XOFF flow control
 stty -ixon
 
