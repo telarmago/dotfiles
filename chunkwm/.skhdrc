@@ -10,6 +10,15 @@ shift + alt - j : chunkc tiling::window --swap south
 shift + alt - k : chunkc tiling::window --swap north
 shift + alt - l : chunkc tiling::window --swap east
 
+# increase region size
+ctrl - h : chunkc tiling::window --use-temporary-ratio 0.1 --adjust-window-edge west
+ctrl - j : chunkc tiling::window --use-temporary-ratio 0.1 --adjust-window-edge south
+ctrl - k : chunkc tiling::window --use-temporary-ratio 0.1 --adjust-window-edge north
+ctrl - l : chunkc tiling::window --use-temporary-ratio 0.1 --adjust-window-edge east
+
+# equalize size of windows
+shift + alt - 0 : chunkc tiling::desktop --equalize
+
 # send window to desktop
 shift + alt - 1 : chunkc tiling::window --send-to-desktop 1
 shift + alt - 2 : chunkc tiling::window --send-to-desktop 2
