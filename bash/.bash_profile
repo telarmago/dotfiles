@@ -6,7 +6,7 @@ alias ll="ls -Gph -Al"
 alias ..="cd .."
 
 # cleaning
-alias cleanhome="rm -rf {.bash_history,.bash_sessions,.lesshst,.oracle_jre_usage}"
+alias cleanhome="rm -rf {.bash_history,.bash_sessions,.viminfo,.lesshst,.oracle_jre_usage}"
 alias finddots="sudo find . -name '._*' -o -name '.DS_Store'"
 alias dotclean="dot_clean -mv /"
 alias deletesystemlogs="sudo rm -rfv /private/var/log/"
