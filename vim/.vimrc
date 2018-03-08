@@ -2,11 +2,13 @@
 syntax on
 
 " convert tabs to spaces
-set tabstop=4       " number of visual spaces per TAB; show existing tab with 4 spaces width
-set softtabstop=4   " when hitting <BS>, pretend like a tab is removed, even if spaces; number of spaces in tab when editing
-set expandtab       " tabs are spaces
-set shiftwidth=4    " when indenting with '>', use 4 spaces width
-set autoindent      " automatically match previous line's indent level when making new line
+set expandtab       " hitting tab results in spaces
+set softtabstop=4   " insert/remove X spaces with tab/backspace
+set shiftwidth=4    " move X spaces when indenting with '>>'
+set tabstop=4       " show existing tabs as X spaces wide
+
+" automatically indent next line
+set autoindent
 
 " show line numbers
 set number
