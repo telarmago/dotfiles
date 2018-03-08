@@ -10,6 +10,7 @@ Plug 'joshdick/onedark.vim'
 call plug#end()
 
 " onedark.vim color theme settings
+set termguicolors                           " enable 24-bit color
 let g:onedark_terminal_italics=1
 colorscheme onedark
-highlight Normal ctermbg=NONE
+highlight Normal ctermbg=NONE guibg=NONE    " make background default or "clear"
