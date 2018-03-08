@@ -1,7 +1,7 @@
-" :DoMatchParen - parentheses highlighting, this is enabled by default
+" turn syntax highlighting on
 syntax on
 
-" Spaces > tabs!
+" convert tabs to spaces
 set tabstop=4       " number of visual spaces per TAB; show existing tab with 4 spaces width
 set softtabstop=4   " when hitting <BS>, pretend like a tab is removed, even if spaces; number of spaces in tab when editing
 set expandtab       " tabs are spaces
@@ -11,5 +11,8 @@ set autoindent      " automatically match previous line's indent level when maki
 " show line numbers
 set number
 
-" column guide
+" show column guide
 set colorcolumn=80
+
+" stop creation of .netrwhist files
+let g:netrw_dirhistmax=0
