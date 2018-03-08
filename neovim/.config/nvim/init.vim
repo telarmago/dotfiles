@@ -18,6 +18,8 @@ colorscheme onedark
 " make background default/clear
 highlight Normal ctermbg=NONE guibg=NONE 
 
+" Goyo settings
+let g:goyo_height=100
 " fix Goyo and background color
 function! s:goyo_leave()
   highlight Normal ctermbg=NONE guibg=NONE
