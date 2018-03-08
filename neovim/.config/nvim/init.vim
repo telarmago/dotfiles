@@ -1,6 +1,6 @@
 source ~/.vimrc
 
-" fix cursor with neovim
+" fix cursor type (underline) with neovim and iterm
 set guicursor=
 
 " plugins, managed with vim-plug
@@ -10,8 +10,11 @@ Plug 'joshdick/onedark.vim'
 Plug 'sheerun/vim-polyglot'
 call plug#end()
 
+" enable 24-bit color
+set termguicolors
 " onedark.vim color theme settings
-set termguicolors                           " enable 24-bit color
 let g:onedark_terminal_italics=1
 colorscheme onedark
-highlight Normal ctermbg=NONE guibg=NONE    " make background default or "clear"
+" make background default/clear
+highlight Normal ctermbg=NONE guibg=NONE 
+
