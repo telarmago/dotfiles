@@ -25,3 +25,7 @@ function! s:goyo_leave()
   highlight Normal ctermbg=NONE guibg=NONE
 endfunction
 autocmd! User GoyoLeave nested call <SID>goyo_leave()
+
+" keybinds
+let mapleader=" "
+nnoremap <Leader>gy :Goyo<CR>
