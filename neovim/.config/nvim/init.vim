@@ -28,4 +28,4 @@ autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
 " keybinds
 let mapleader=" "
-nnoremap <Leader>gy :Goyo<CR>
+nnoremap <Leader>g :Goyo<CR>
