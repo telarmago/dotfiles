@@ -2,6 +2,8 @@
 
 These dotfiles are primarily for macOS, but many settings (vim, tmux, bash, etc.) will work on any Unix-like system (e.g., Linux). They constitute a minimal configuration, aimed at achieving simplicity and functionality.
 
+![nvim in tmux](https://i.imgur.com/ZNKbaUY.png)
+
 `tree -a`:
 
 ```
