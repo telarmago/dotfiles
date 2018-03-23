@@ -21,17 +21,10 @@ alias hidedesktop="defaults write com.apple.finder CreateDesktop false; killall 
 alias showdesktop="defaults write com.apple.finder CreateDesktop true; killall Finder"
 
 # miscellaneous info
-alias whatsize='du -sh * | sort -h'
+alias whatsize="du -sh * | sort -h"
 alias sleepinfo='pmset -g log | grep -e " Sleep  " -e " Wake  "'
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias publicip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
-alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 
-# allow ctrl-s to search forwards; disables XON/XOFF flow control
+# disables XON/XOFF flow control; allows ctrl-s to search forwards
 stty -ixon
-
-# added by Miniconda3 installer
-export PATH="~/miniconda3/bin:$PATH"
-
-# rbenv shim
-eval "$(rbenv init -)"
