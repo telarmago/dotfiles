@@ -8,10 +8,6 @@ These dotfiles are primarily for macOS, but many settings (vim, tmux, bash, etc.
 
 ```
 .
-├── _misc
-│   └── Library
-│       └── KeyBindings
-│           └── DefaultKeyBinding.dict
 ├── bash
 │   ├── .bash_profile
 │   └── .hushlogin
