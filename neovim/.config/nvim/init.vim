@@ -1,7 +1,7 @@
 source ~/.vimrc
 
 " fix cursor type (underline) with neovim and iterm
-set guicursor=
+" set guicursor=
 
 " plugins, managed with vim-plug
 call plug#begin('~/.vim/plugged')
@@ -16,7 +16,7 @@ set termguicolors
 let g:onedark_terminal_italics=1
 colorscheme onedark
 " make background default/clear
-highlight Normal ctermbg=NONE guibg=NONE 
+highlight Normal ctermbg=NONE guibg=NONE
 
 " Goyo settings
 let g:goyo_height=100
