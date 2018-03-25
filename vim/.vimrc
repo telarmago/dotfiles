@@ -1,5 +1,6 @@
-:autocmd VimLeave * :!rm ~/.viminfo     " delete .viminfo
-let g:netrw_dirhistmax=0                " delete .netrwhist
+" delete .viminfo, .netrwhist
+:autocmd VimLeave * :!rm ~/.viminfo
+let g:netrw_dirhistmax=0
 
 " syntax on             " turn syntax highlighting on
 " set autoindent        " automatically indent next line
