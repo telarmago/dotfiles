@@ -1,20 +1,13 @@
-" turn syntax highlighting on
-syntax on
+:autocmd VimLeave * :!rm ~/.viminfo     " delete .viminfo
+let g:netrw_dirhistmax=0                " delete .netrwhist
 
-" convert tabs to spaces
-set expandtab       " hitting tab results in spaces
-set softtabstop=4   " insert/remove X spaces with tab/backspace
-set shiftwidth=4    " move X spaces when indenting with '>>'
-set tabstop=4       " show existing tabs as X spaces wide
+" syntax on             " turn syntax highlighting on
+" set autoindent        " automatically indent next line
+" set number            " show line numbers
+" set colorcolumn=80    " show column guide
 
-" automatically indent next line
-set autoindent
-
-" show line numbers
-set number
-
-" show column guide
-set colorcolumn=80
-
-" stop creation of .netrwhist files
-let g:netrw_dirhistmax=0
+" tabs -> spaces
+" set expandtab         " hitting tab results in spaces
+" set softtabstop=4     " insert/remove X spaces with tab/backspace
+" set shiftwidth=4      " move X spaces when indenting with '>>'
+" set tabstop=4         " show existing tabs as X spaces wide
