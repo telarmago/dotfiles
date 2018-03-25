@@ -2,8 +2,8 @@
 export PS1="\[\033[34m\]\w\n\[\033[31m\]> \[\033[00m\]"
 
 # convenience
-alias ll="ls -GA"
-alias lal="ls -GAl"
+alias la="ls -GA"
+alias ll="ls -GAl"
 alias ..="cd .."
 
 # cleaning
