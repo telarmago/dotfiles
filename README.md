@@ -1,16 +1,29 @@
 # Minimal dotfiles
 
-These dotfiles are primarily for macOS, but settings for most programs (vim, tmux, bash, etc.) will work on any Unix-like system (e.g., Linux). These files constitute a minimal configuration, aimed at achieving simplicity while retaining functionality.
+These dotfiles are for macOS, but most settings (vim, tmux, bash, etc.) will work on any Unix-like system (e.g., Linux). These files constitute a minimal configuration, aimed at achieving simplicity while retaining functionality.
 
 ![nvim in tmux](https://i.imgur.com/ZNKbaUY.png)
+
+## Symlinking
+
+You can symlink the dotfiles you want to use in the following manner:
+
+```
+cd ~
+git clone https://github.com/telarmago/dotfiles.git
+ln -s ~/dotfiles/bash/.bash_profile ~/
+ln -s ~/dotfiles/vim/.vimrc ~/
+...
+```
+
+## Directory structure
 
 `tree -a`:
 
 ```
 .
 ├── bash
-│   ├── .bash_profile
-│   └── .hushlogin
+│   └── .bash_profile
 ├── chunkwm
 │   ├── .chunkwmrc
 │   └── .skhdrc
