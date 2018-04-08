@@ -17,9 +17,12 @@ alias cleariconcaches="sudo find /private/var/folders/ -name com.apple.dock.icon
                        sudo find /private/var/folders/ -name com.apple.iconservices -exec rm -rf {} \;
                        sudo rm -rf /Library/Caches/com.apple.iconservices.store"
 # desktop management
-alias resetlaunchpad="defaults write com.apple.dock ResetLaunchPad -bool true && killall Dock"
-alias hidedesktop="defaults write com.apple.finder CreateDesktop false && killall Finder"
-alias showdesktop="defaults write com.apple.finder CreateDesktop true && killall Finder"
+alias resetlaunchpad="defaults write com.apple.dock ResetLaunchPad -bool true \
+                      && killall Dock"
+alias hidedesktop="defaults write com.apple.finder CreateDesktop false \
+                   && killall Finder"
+alias showdesktop="defaults write com.apple.finder CreateDesktop true \
+                   && killall Finder"
 # miscellaneous info
 alias whatsize="du -sh * | sort -h"
 alias sleepinfo='pmset -g log | grep -e " Sleep  " -e " Wake  "'
