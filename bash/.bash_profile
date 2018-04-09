@@ -8,7 +8,8 @@ alias la="ls -GA"
 alias ll="ls -GAl"
 alias ..="cd .."
 # cleaning
-alias cleanhome="rm -rf {~/.bash_history,~/.bash_sessions,~/.viminfo,~/.lesshst,~/.python_history,~/.oracle_jre_usage};
+alias cleanhome="rm -rf {~/.bash_history,~/.bash_sessions,~/.viminfo}; \
+                 rm -rf {~/.lesshst,~/.python_history,~/.oracle_jre_usage}; \
                  rm -rf ~/.local/share/nvim/shada/main.shada"
 alias finddots="sudo find . -name '._*' -o -name '.DS_Store'"
 alias dotclean="dot_clean -mv ."
