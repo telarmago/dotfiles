@@ -32,6 +32,8 @@ ln -s ~/dotfiles/vim/.vimrc ~/
 │       └── init.el
 ├── git
 │   └── .gitconfig
+├── misc
+│   └── .ideavimrc
 ├── neovim
 │   └── .config
 │       └── nvim
