@@ -1,6 +1,7 @@
-" delete .viminfo, .netrwhist
+" remove .viminfo, .netrwhist, swap files
 :autocmd VimLeave * :!rm ~/.viminfo
 let g:netrw_dirhistmax=0
+set noswapfile
 
 " syntax on             " turn syntax highlighting on
 " set autoindent        " automatically indent next line
