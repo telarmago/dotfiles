@@ -1,3 +1,5 @@
+# preserve cwd
+source /etc/profile
 # pretty prompt
 export PS1="\[\033[34m\]\w\n\[\033[31m\]> \[\033[00m\]"
 # disables XON/XOFF flow control; allows ctrl-s to search forwards
