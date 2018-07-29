@@ -23,7 +23,8 @@ ln -s ~/dotfiles/vim/.vimrc ~/
 ```
 .
 ├── bash
-│   └── .bash_profile
+│   ├── .bash_profile
+│   └── .bashrc
 ├── chunkwm
 │   ├── .chunkwmrc
 │   └── .skhdrc
