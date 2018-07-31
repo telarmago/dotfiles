@@ -3,7 +3,7 @@
 let g:netrw_dirhistmax=0
 set noswapfile
 
-" syntax on             " turn syntax highlighting on
+syntax on             " turn syntax highlighting on
 " set autoindent        " automatically indent next line
 " set number            " show line numbers
 " set colorcolumn=80    " show column guide
