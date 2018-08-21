@@ -10,12 +10,11 @@ alias la="ls -GA"
 alias ll="ls -GAl"
 alias ..="cd .."
 # cleaning
-alias cleanhome="rm -rf {~/.bash_history,~/.bash_sessions,~/.viminfo}; \
-                 rm -rf {~/.lesshst,~/.python_history,~/.oracle_jre_usage}; \
+alias cleanhome="rm -rf {~/.bash_history,~/.bash_sessions/,~/.lesshst,~/.viminfo}; \
                  rm -rf ~/.local/share/nvim/shada/main.shada"
 alias finddots="sudo find . -name '._*' -o -name '.DS_Store'"
 alias dotclean="dot_clean -mv ."
-alias deletesystemlogs="sudo rm -rfv /private/var/log/"
+alias deletelogs="sudo rm -rfv /private/var/log/ ~/Library/Logs/ /Library/Logs/"
 alias cleariconcaches="sudo find /private/var/folders/ -name com.apple.dock.iconcache -exec rm {} \;
                        sudo find /private/var/folders/ -name com.apple.iconservices -exec rm -rf {} \;
                        sudo rm -rf /Library/Caches/com.apple.iconservices.store"
