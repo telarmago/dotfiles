@@ -35,3 +35,7 @@ alias localip="ipconfig getifaddr en0"
 search() {
     find . -iname '*.txt' -exec grep -i "$1" {} \+
 }
+
+v() {
+    osascript -e "set Volume $1"
+}
