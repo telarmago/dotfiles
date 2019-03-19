@@ -18,6 +18,7 @@ alias deletelogs="sudo rm -rfv /private/var/log/ ~/Library/Logs/ /Library/Logs/"
 alias cleariconcaches="sudo find /private/var/folders/ -name com.apple.dock.iconcache -exec rm {} \;
                        sudo find /private/var/folders/ -name com.apple.iconservices -exec rm -rf {} \;
                        sudo rm -rf /Library/Caches/com.apple.iconservices.store"
+alias dsp="docker system prune"
 # desktop management
 alias resetlaunchpad="defaults write com.apple.dock ResetLaunchPad -bool true \
                       && killall Dock"
@@ -25,7 +26,7 @@ alias hidedesktop="defaults write com.apple.finder CreateDesktop false \
                    && killall Finder"
 alias showdesktop="defaults write com.apple.finder CreateDesktop true \
                    && killall Finder"
-# miscellaneous info
+# miscellaneous
 alias whatsize="du -sh * | sort -h"
 alias sleepinfo="pmset -g log | grep -e ' Sleep  ' -e ' Wake  '"
 alias publicip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -35,7 +36,6 @@ alias localip="ipconfig getifaddr en0"
 search() {
     find . -iname '*.txt' -exec grep -i "$1" {} \+
 }
-
 v() {
     osascript -e "set Volume $1"
 }
