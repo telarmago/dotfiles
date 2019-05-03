@@ -39,3 +39,6 @@ search() {
 v() {
     osascript -e "set Volume $1"
 }
+deletedots() {
+    sudo find . -name '._*' -o -name '.DS_Store' | sed 's/.*/"&"/' | xargs rm -rf
+}
