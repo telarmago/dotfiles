@@ -1,7 +1,7 @@
 # preserve cwd
 source /etc/profile
 # pretty prompt
-export PS1="\[\033[34m\]\w\n\[\033[31m\]> \[\033[00m\]"
+export PS1="\[\033[34m\]\w\[\033[32m\]\$(parse_git_branch)\n\[\033[31m\]> \[\033[00m\]"
 # disables XON/XOFF flow control; allows ctrl-s to search forwards
 stty -ixon
 
@@ -41,4 +41,7 @@ v() {
 }
 deletedots() {
     sudo find . -name '._*' -o -name '.DS_Store' | sed 's/.*/"&"/' | xargs rm -rf
+}
+parse_git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
