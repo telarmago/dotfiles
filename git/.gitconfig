@@ -4,5 +4,9 @@
 [alias]
     lg = log --graph --pretty=format:'%C(auto)%h %d %s %C(green)(%cr) %C(blue)<%an>' --abbrev-commit
     s = status
+    d = diff
+    dc = diff --cached
+    b = branch
+    co = checkout
 [core]
     autocrlf = input
