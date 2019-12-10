@@ -42,7 +42,7 @@ alias showdesktop='defaults write com.apple.finder CreateDesktop true \
 
 # Miscellaneous
 alias whatsize='du -sh * | sort -h'
-alias sleepinfo='pmset -g log | grep -e " Sleep  " -e " Wake  "'
+alias sleepinfo='pmset -g log | egrep "Sleep state|Wake from"'
 alias publicip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias localip='ipconfig getifaddr en0'
 
