@@ -1,9 +1,37 @@
-# Fix PATH
+# Aliases
+alias ll='ls -lAG'
+alias la='ls -AG'
+alias ..='cd ..'
+alias resetlaunchpad='defaults write com.apple.dock ResetLaunchPad -bool true \
+                      && killall Dock'
+## Cleaning
+alias cleanhome='rm -rf {~/.zsh_history,~/.lesshst}'
+alias finddots='sudo find . -name "._*" -o -name ".DS_Store"'
+alias dotclean='dot_clean -mv .'
+alias deletelogs='sudo rm -rfv /private/var/log/ ~/Library/Logs/ /Library/Logs/'
+alias cleariconcaches='sudo find /private/var/folders/ -name com.apple.dock.iconcache -exec rm {} \;
+                       sudo find /private/var/folders/ -name com.apple.iconservices -exec rm -rf {} \;
+                       sudo rm -rf /Library/Caches/com.apple.iconservices.store'
+alias dsp='docker system prune'
+## Info
+alias whatsize='du -sh * | sort -h'
+alias sleepinfo='pmset -g log | egrep "Sleep state|Wake from"'
+alias publicip='dig +short myip.opendns.com @resolver1.opendns.com'
+alias localip='ipconfig getifaddr en0'
+## Functions
+deletedots() {
+    sudo find . -name '._*' -o -name '.DS_Store' | sed 's/.*/"&"/' | xargs rm -rf
+}
+search() {
+    find . -iname '*.txt' -exec grep -i "$1" {} \+
+}
+
+# Fix $PATH
 path+=/usr/local/bin/
 path+=/usr/sbin/
 
 # Pretty prompt
-PROMPT='%~ %# '
+PROMPT='%~ ➜ '
 
 # Show git information
 autoload -Uz vcs_info
@@ -17,42 +45,5 @@ RPROMPT=\$vcs_info_msg_0_
 # Disables XON/XOFF flow control; allows ctrl-s to search forwards
 stty -ixon
 
-# Aliases
-alias la='ls -GA'
-alias ll='ls -GAl'
-alias ..='cd ..'
-
-# Cleaning
-alias cleanhome='rm -rf {~/.zsh_history,~/.lesshst}'
-alias finddots='sudo find . -name "._*" -o -name ".DS_Store"'
-alias dotclean='dot_clean -mv .'
-alias deletelogs='sudo rm -rfv /private/var/log/ ~/Library/Logs/ /Library/Logs/'
-alias cleariconcaches='sudo find /private/var/folders/ -name com.apple.dock.iconcache -exec rm {} \;
-                       sudo find /private/var/folders/ -name com.apple.iconservices -exec rm -rf {} \;
-                       sudo rm -rf /Library/Caches/com.apple.iconservices.store'
-alias dsp='docker system prune'
-
-# Desktop management
-alias resetlaunchpad='defaults write com.apple.dock ResetLaunchPad -bool true \
-                      && killall Dock'
-alias hidedesktop='defaults write com.apple.finder CreateDesktop false \
-                   && killall Finder'
-alias showdesktop='defaults write com.apple.finder CreateDesktop true \
-                   && killall Finder'
-
-# Miscellaneous
-alias whatsize='du -sh * | sort -h'
-alias sleepinfo='pmset -g log | egrep "Sleep state|Wake from"'
-alias publicip='dig +short myip.opendns.com @resolver1.opendns.com'
-alias localip='ipconfig getifaddr en0'
-
-# Functions
-deletedots() {
-    sudo find . -name '._*' -o -name '.DS_Store' | sed 's/.*/"&"/' | xargs rm -rf
-}
-search() {
-    find . -iname '*.txt' -exec grep -i "$1" {} \+
-}
-v() {
-    osascript -e "set Volume $1"
-}
+# oh-my-zsh
+unset LESS # fixes git branch opening up less
