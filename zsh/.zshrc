@@ -31,7 +31,7 @@ path+=/usr/local/bin/
 path+=/usr/sbin/
 
 # Pretty prompt
-PROMPT='%~ ➜ '
+PROMPT='%~ > '
 
 # Show git information
 autoload -Uz vcs_info
@@ -46,4 +46,4 @@ RPROMPT=\$vcs_info_msg_0_
 stty -ixon
 
 # oh-my-zsh
-unset LESS # fixes git branch opening up less
+unset LESS # fixes `git branch` opening up less
