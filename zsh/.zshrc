@@ -4,6 +4,10 @@ alias la='ls -AG'
 alias ..='cd ..'
 alias resetlaunchpad='defaults write com.apple.dock ResetLaunchPad -bool true \
                       && killall Dock'
+alias hidedesktop='defaults write com.apple.finder CreateDesktop false \
+                   && killall Finder'
+alias showdesktop='defaults write com.apple.finder CreateDesktop true \
+                   && killall Finder'
 ## Cleaning
 alias cleanhome='rm -rf {~/.zsh_history,~/.lesshst}'
 alias finddots='sudo find . -name "._*" -o -name ".DS_Store"'
