@@ -1,0 +1,22 @@
+{
+    // General
+    "editor.fontFamily": "Iosevka-Medium",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 16,
+    "terminal.integrated.fontSize": 16,
+    "window.zoomLevel": 1,
+    "editor.rulers": [80],
+    "files.associations": {
+        "*.txt": "markdown",
+    },
+    "editor.multiCursorModifier": "ctrlCmd",
+    "window.newWindowDimensions": "inherit",
+    "files.trimTrailingWhitespace": true,
+    "editor.formatOnPaste": true,
+    "extensions.ignoreRecommendations": true,
+
+    // Theme
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.showSlider": "always",
+    "workbench.colorTheme": "Material Theme Darker",
+}
