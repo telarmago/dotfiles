@@ -11,36 +11,7 @@ You can symlink the dotfiles you want to use in the following manner:
 ```
 cd ~
 git clone https://github.com/telarmago/dotfiles.git
-ln -s ~/dotfiles/bash/.bash_profile ~/
+ln -s ~/dotfiles/zsh/.zshrc ~/
 ln -s ~/dotfiles/vim/.vimrc ~/
 ...
-```
-
-## Directory structure
-
-`tree -a`:
-
-```
-.
-├── bash
-│   ├── .bash_profile
-│   └── .bashrc
-├── chunkwm
-│   ├── .chunkwmrc
-│   └── .skhdrc
-├── emacs
-│   └── .emacs.d
-│       └── init.el
-├── git
-│   └── .gitconfig
-├── misc
-│   └── .ideavimrc
-├── neovim
-│   └── .config
-│       └── nvim
-│           └── init.vim
-├── tmux
-│   └── .tmux.conf
-└── vim
-    └── .vimrc
 ```
