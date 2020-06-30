@@ -1,0 +1,24 @@
+[
+    // make ctrl+tab behave like in browser
+    { "keys": ["ctrl+tab"], "command": "next_view" },
+    { "keys": ["ctrl+shift+tab"], "command": "prev_view" },
+
+    // for `:#` to go to line
+    {
+        "keys": [":"],
+        "command": "show_overlay",
+        "args": {"overlay": "goto", "text": ":"},
+        "context":
+        [
+            { "key": "setting.command_mode", "operand": true },
+        ]
+    },
+
+    // navigate back/forward
+    { "keys": ["ctrl+alt+super+["], "command": "jump_back" },
+    { "keys": ["ctrl+alt+super+]"], "command": "jump_forward" },
+
+    // swap key bindings for paste and paste_and_indent
+    // { "keys": ["super+v"], "command": "paste_and_indent" },
+    // { "keys": ["super+shift+v"], "command": "paste" },
+]

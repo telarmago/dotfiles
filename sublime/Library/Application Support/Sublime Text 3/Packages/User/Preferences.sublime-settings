@@ -1,0 +1,30 @@
+{
+    // General
+    "font_face": "Iosevka Medium",
+    "font_size": 20,
+    "hot_exit": false,
+    "open_files_in_new_window": false,
+    "translate_tabs_to_spaces": true,
+    "rulers": [80],
+    "fade_fold_buttons": false,
+    "trim_trailing_white_space_on_save": true,
+
+    "scroll_past_end": true,
+    "highlight_line": true,
+    "caret_extra_top": 0,
+    "caret_extra_bottom": 0,
+
+    // Vim
+    "ignored_packages":
+    [
+    // "Vintage"
+    ],
+    "vintage_start_in_command_mode": true,
+
+    // Theme
+    "always_show_minimap_viewport": true,
+    "theme": "Material-Theme-Darker.sublime-theme",
+    "color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
+    // Material theme
+    "material_theme_small_tab": true,
+}
