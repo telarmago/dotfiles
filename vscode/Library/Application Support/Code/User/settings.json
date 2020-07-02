@@ -12,8 +12,11 @@
     "editor.multiCursorModifier": "ctrlCmd",
     "window.newWindowDimensions": "inherit",
     "files.trimTrailingWhitespace": true,
+
     "editor.formatOnPaste": true,
     "extensions.ignoreRecommendations": true,
+    "editor.accessibilitySupport": "off",
+    "zenMode.fullScreen": false,
 
     // Theme
     "editor.minimap.renderCharacters": false,
