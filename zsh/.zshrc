@@ -34,6 +34,10 @@ search() {
 path+=/usr/local/bin/
 path+=/usr/sbin/
 
+# oh-my-zsh
+unset LESS # stops `git branch` from using `less`
+DISABLE_AUTO_UPDATE=true
+
 # Pretty prompt
 PROMPT='%~ > '
 
@@ -48,7 +52,3 @@ RPROMPT=\$vcs_info_msg_0_
 
 # Disables XON/XOFF flow control; allows ctrl-s to search forwards
 stty -ixon
-
-# oh-my-zsh
-unset LESS # stops `git branch` from using `less`
-DISABLE_AUTO_UPDATE=true
