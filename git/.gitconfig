@@ -8,5 +8,6 @@
     dc = diff --cached
     b = branch
     co = checkout
+    clb = "!f() { git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -d; }; f"
 [core]
     autocrlf = input
