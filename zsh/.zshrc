@@ -36,8 +36,9 @@ path+=/usr/sbin/
 
 # oh-my-zsh
 unset LESS # stops `git branch` from using `less`
-DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true" # uncomment this line before `source $ZSH/oh-my-zsh.sh`
 
+# Delete sections below for oh-my-zsh
 # Pretty prompt
 PROMPT='%~ > '
 
