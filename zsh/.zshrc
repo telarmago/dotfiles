@@ -9,7 +9,7 @@ alias hidedesktop='defaults write com.apple.finder CreateDesktop false \
 alias showdesktop='defaults write com.apple.finder CreateDesktop true \
                    && killall Finder'
 ## Cleaning
-alias cleanhome='rm -rf {~/.zsh_history,~/.lesshst}'
+alias cleanhome='rm -rf {~/.zsh_history,~/.zsh_sessions,~/.lesshst}'
 alias finddots='sudo find . -name "._*" -o -name ".DS_Store"'
 alias dotclean='dot_clean -mv .'
 alias deletelogs='sudo rm -rfv /private/var/log/ ~/Library/Logs/ /Library/Logs/'
