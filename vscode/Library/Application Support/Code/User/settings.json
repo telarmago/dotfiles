@@ -1,6 +1,6 @@
 {
     // General
-    "editor.fontFamily": "Iosevka-Medium",
+    "editor.fontFamily": "Iosevka-Curly-Medium",
     "editor.fontLigatures": true,
     "editor.fontSize": 16,
     "terminal.integrated.fontSize": 16,
