@@ -4,7 +4,6 @@
     "editor.fontLigatures": true,
     "editor.fontSize": 16,
     "terminal.integrated.fontSize": 16,
-    "window.zoomLevel": 1,
     "editor.rulers": [80],
     "files.associations": {
         "*.txt": "markdown",
