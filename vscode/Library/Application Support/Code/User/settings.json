@@ -2,8 +2,8 @@
     // General
     "editor.fontFamily": "SF Mono",
     "editor.fontLigatures": true,
-    "editor.fontSize": 16,
-    "terminal.integrated.fontSize": 16,
+    "editor.fontSize": 14,
+    "terminal.integrated.fontSize": 15,
     "editor.rulers": [80],
     "files.associations": {
         "*.txt": "markdown",
@@ -15,6 +15,9 @@
     "editor.formatOnPaste": true,
     "extensions.ignoreRecommendations": true,
     "zenMode.fullScreen": false,
+    "zenMode.hideTabs": false,
+    "zenMode.hideLineNumbers": false,
+    "diffEditor.renderSideBySide": false,
 
     // Theme
     "editor.minimap.renderCharacters": false,
