@@ -16,7 +16,6 @@
     "extensions.ignoreRecommendations": true,
     "zenMode.fullScreen": false,
     "zenMode.hideTabs": false,
-    "zenMode.hideLineNumbers": false,
     "diffEditor.renderSideBySide": false,
 
     // Theme
