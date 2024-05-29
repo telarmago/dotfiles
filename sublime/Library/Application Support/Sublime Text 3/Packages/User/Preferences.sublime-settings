@@ -12,6 +12,7 @@
     "highlight_line": true,
     "caret_extra_top": 1,
     "caret_extra_bottom": 1,
+    "scroll_past_end": true,
 
     // Vim
     "ignored_packages":
