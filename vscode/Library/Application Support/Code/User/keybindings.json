@@ -6,4 +6,5 @@
     { "key": "ctrl+alt+cmd+[", "command": "workbench.action.navigateBack" },
     { "key": "ctrl+alt+cmd+]", "command": "workbench.action.navigateForward" },
     { "key": "cmd+k", "command": "workbench.action.terminal.clear", "when": "terminalFocus" },
+    { "key": "cmd+0", "command": "workbench.action.zoomReset" },
 ]
