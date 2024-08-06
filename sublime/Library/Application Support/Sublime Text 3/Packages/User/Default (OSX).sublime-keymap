@@ -17,4 +17,10 @@
     // navigate back/forward
     { "keys": ["ctrl+alt+super+["], "command": "jump_back" },
     { "keys": ["ctrl+alt+super+]"], "command": "jump_forward" },
+
+    // (partially) enable vim ``
+    {
+        "keys": ["`", "`"],
+        "command": "jump_back",
+    }
 ]
