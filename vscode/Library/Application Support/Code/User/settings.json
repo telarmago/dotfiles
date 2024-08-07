@@ -18,7 +18,6 @@
     "diffEditor.renderSideBySide": false,
     "window.commandCenter": false,
     "workbench.layoutControl.enabled": false,
-    "workbench.editor.enablePreview": true,
 
     // Theme
     "editor.minimap.renderCharacters": false,
