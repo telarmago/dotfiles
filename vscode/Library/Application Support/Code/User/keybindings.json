@@ -5,8 +5,8 @@
     { "key": "ctrl+l", "command": "workbench.action.navigateRight" },
     { "key": "cmd+[", "command": "workbench.action.navigateBack" }, // move forward/backward
     { "key": "cmd+]", "command": "workbench.action.navigateForward" },
-    { "key": "ctrl+alt+cmd+[", "command": "editor.action.outdentLines" }, // indent/outdent
-    { "key": "ctrl+alt+cmd+]", "command": "editor.action.indentLines" },
+    { "key": "cmd+;", "command": "editor.action.outdentLines" }, // indent/outdent
+    { "key": "cmd+'", "command": "editor.action.indentLines" },
     { "key": "cmd+k", "command": "workbench.action.terminal.clear", "when": "terminalFocus" }, // clear integrated terminal
     { "key": "cmd+0", "command": "workbench.action.zoomReset" }, // unbreak reset zoom
     { "key": "shift+cmd+d", "command": "-editor.action.copyLinesDownAction", "when": "editorFocus" }, // unbreak debug panel
