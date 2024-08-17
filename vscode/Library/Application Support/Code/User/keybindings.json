@@ -3,12 +3,13 @@
     { "key": "ctrl+j", "command": "workbench.action.navigateDown" },
     { "key": "ctrl+k", "command": "workbench.action.navigateUp" },
     { "key": "ctrl+l", "command": "workbench.action.navigateRight" },
-    { "key": "ctrl+alt+cmd+[", "command": "workbench.action.navigateBack" }, // move forward/backward
-    { "key": "ctrl+alt+cmd+]", "command": "workbench.action.navigateForward" },
+    { "key": "cmd+[", "command": "workbench.action.navigateBack" }, // move forward/backward
+    { "key": "cmd+]", "command": "workbench.action.navigateForward" },
+    { "key": "ctrl+alt+cmd+[", "command": "editor.action.outdentLines" }, // indent/outdent
+    { "key": "ctrl+alt+cmd+]", "command": "editor.action.indentLines" },
     { "key": "cmd+k", "command": "workbench.action.terminal.clear", "when": "terminalFocus" }, // clear integrated terminal
     { "key": "cmd+0", "command": "workbench.action.zoomReset" }, // unbreak reset zoom
     { "key": "shift+cmd+d", "command": "-editor.action.copyLinesDownAction", "when": "editorFocus" }, // unbreak debug panel
     { "key": "cmd+y", "command": "-redo", "when": "editorTextFocus && !editorReadonly" }, // unbreak omnisearch
     { "key": "cmd+c", "command": "-extension.vim_cmd+c", "when": "editorTextFocus && vim.active && vim.overrideCopy && vim.use<D-c> && !inDebugRepl" }, // stop copy from exiting insert mode in vim
-    { "key": "ctrl+cmd+2", "command": "workbench.action.splitEditorRight" }, // split right (zoom out to have more code side by side)
 ]
