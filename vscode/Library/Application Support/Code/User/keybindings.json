@@ -26,6 +26,8 @@
     // vim - enable u and ctrl+r to act like system undo/redo
     { "key": "u", "command": "undo", "when": "editorTextFocus && vim.active && !inDebugRepl" },
     { "key": "ctrl+r", "command": "redo", "when": "editorTextFocus && vim.active && !inDebugRepl" },
+    // vim - bind / to normal search
+    { "key": "/", "command": "actions.find", "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'" }
     // unbreak reset zoom
     { "key": "cmd+0", "command": "workbench.action.zoomReset" },
     // unbreak debug panel
