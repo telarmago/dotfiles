@@ -3,7 +3,7 @@
     "editor.fontFamily": "SF Mono",
     "editor.fontLigatures": true,
     "editor.fontSize": 14,
-    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.fontSize": 14,
     "editor.rulers": [80],
     "files.associations": {
         "*.txt": "markdown",
@@ -19,8 +19,15 @@
     "window.commandCenter": false,
     "workbench.layoutControl.enabled": false,
 
+    // Debug
+    "debug.toolBarLocation": "docked",
+    "debug.console.fontSize": 14,
+
     // Theme
     "editor.minimap.renderCharacters": false,
     "editor.minimap.showSlider": "always",
     "workbench.colorTheme": "Material Theme Darker",
+
+    // Other
+    "workbench.editor.enablePreview": true,
 }
