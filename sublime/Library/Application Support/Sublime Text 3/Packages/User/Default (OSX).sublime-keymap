@@ -19,8 +19,8 @@
     { "keys": ["super+]"], "command": "jump_forward" },
 
     // indent/outdent
-    { "keys": ["ctrl+alt+super+]"], "command": "indent" },
-    { "keys": ["ctrl+alt+super+["], "command": "unindent" },
+    { "keys": ["super+'"], "command": "indent" },
+    { "keys": ["super+;"], "command": "unindent" },
 
     // (partially) enable vim's `` motion
     {
