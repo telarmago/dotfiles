@@ -11,13 +11,15 @@
     "editor.multiCursorModifier": "ctrlCmd",
     "window.newWindowDimensions": "inherit",
     "files.trimTrailingWhitespace": true,
-
     "editor.formatOnPaste": true,
     "extensions.ignoreRecommendations": true,
     "zenMode.fullScreen": false,
     "diffEditor.renderSideBySide": false,
+
+    // Layout
     "window.commandCenter": false,
     "workbench.layoutControl.enabled": false,
+    "workbench.activityBar.location": "top",
 
     // Debug
     "debug.toolBarLocation": "docked",
