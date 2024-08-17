@@ -1,7 +1,7 @@
 [
     // make ctrl+tab behave like in browser
-    { "keys": ["ctrl+tab"], "command": "next_view" },
-    { "keys": ["ctrl+shift+tab"], "command": "prev_view" },
+    // { "keys": ["ctrl+tab"], "command": "next_view" },
+    // { "keys": ["ctrl+shift+tab"], "command": "prev_view" },
 
     // for `:#` to go to line
     {
@@ -15,10 +15,14 @@
     },
 
     // navigate back/forward
-    { "keys": ["ctrl+alt+super+["], "command": "jump_back" },
-    { "keys": ["ctrl+alt+super+]"], "command": "jump_forward" },
+    { "keys": ["super+["], "command": "jump_back" },
+    { "keys": ["super+]"], "command": "jump_forward" },
 
-    // (partially) enable vim ``
+    // indent/outdent
+    { "keys": ["ctrl+alt+super+]"], "command": "indent" },
+    { "keys": ["ctrl+alt+super+["], "command": "unindent" },
+
+    // (partially) enable vim's `` motion
     {
         "keys": ["`", "`"],
         "command": "jump_back",
