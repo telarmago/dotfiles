@@ -26,8 +26,8 @@
     // vim - stop copy from exiting insert mode in vim
     { "key": "cmd+c", "command": "-extension.vim_cmd+c", "when": "editorTextFocus && vim.active && vim.overrideCopy && vim.use<D-c> && !inDebugRepl" },
     // vim - enable u and ctrl+r to act like system undo/redo
-    { "key": "u", "command": "undo", "when": "editorTextFocus && vim.active && !inDebugRepl" },
-    { "key": "ctrl+r", "command": "redo", "when": "editorTextFocus && vim.active && !inDebugRepl" },
+    { "key": "u", "command": "undo", "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'" },
+    { "key": "ctrl+r", "command": "redo", "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'" },
     // vim - bind / to normal search
     { "key": "/", "command": "actions.find", "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'" },
     // unbreak reset zoom
