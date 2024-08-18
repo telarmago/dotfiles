@@ -12,6 +12,8 @@
     { "key": "cmd+'", "command": "editor.action.indentLines" },
     // clear integrated terminal
     { "key": "cmd+k", "command": "workbench.action.terminal.clear", "when": "terminalFocus" },
+    // cmd-9 to last tab
+    { "key": "cmd+9", "command": "workbench.action.lastEditorInGroup" },
     // debug
     { "key": "ctrl+alt+cmd+c", "command": "workbench.action.debug.start", "when": "debuggersAvailable && debugState == 'inactive'" },
     { "key": "ctrl+alt+cmd+c", "command": "workbench.action.debug.continue", "when": "debugState == 'stopped'" },
@@ -27,7 +29,7 @@
     { "key": "u", "command": "undo", "when": "editorTextFocus && vim.active && !inDebugRepl" },
     { "key": "ctrl+r", "command": "redo", "when": "editorTextFocus && vim.active && !inDebugRepl" },
     // vim - bind / to normal search
-    { "key": "/", "command": "actions.find", "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'" }
+    { "key": "/", "command": "actions.find", "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'" },
     // unbreak reset zoom
     { "key": "cmd+0", "command": "workbench.action.zoomReset" },
     // unbreak debug panel
