@@ -36,4 +36,9 @@
     { "key": "shift+cmd+d", "command": "-editor.action.copyLinesDownAction", "when": "editorFocus" },
     // unbreak omnisearch
     { "key": "cmd+y", "command": "-redo", "when": "editorTextFocus && !editorReadonly" },
+    // ctrl-./, - next/previous modification
+    { "key": "ctrl+.", "command": "workbench.action.compareEditor.nextChange", "when": "textCompareEditorVisible" },
+    { "key": "ctrl+,", "command": "workbench.action.compareEditor.previousChange", "when": "textCompareEditorVisible" },
+    { "key": "ctrl+.", "command": "workbench.action.editor.nextChange", "when": "editorTextFocus && !textCompareEditorActive" },
+    { "key": "ctrl+,", "command": "workbench.action.editor.previousChange", "when": "editorTextFocus && !textCompareEditorActive" },
 ]
