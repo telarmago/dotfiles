@@ -33,4 +33,7 @@
     // Other
     "workbench.editor.enablePreview": true,
     "workbench.editor.wrapTabs": true,
+    "workbench.editor.tabSizing": "fixed",
+    "workbench.editor.tabSizingFixedMinWidth": 160,
+    "workbench.editor.tabSizingFixedMaxWidth": 200,
 }
