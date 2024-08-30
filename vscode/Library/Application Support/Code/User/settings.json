@@ -32,4 +32,5 @@
 
     // Other
     "workbench.editor.enablePreview": true,
+    "workbench.editor.wrapTabs": true,
 }
