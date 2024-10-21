@@ -8,10 +8,7 @@
         "keys": [":"],
         "command": "show_overlay",
         "args": {"overlay": "goto", "text": ":"},
-        "context":
-        [
-            { "key": "setting.command_mode", "operand": true },
-        ]
+        "context": [{"key": "setting.command_mode", "operand": true}]
     },
 
     // navigate back/forward
@@ -22,9 +19,10 @@
     { "keys": ["super+'"], "command": "indent" },
     { "keys": ["super+;"], "command": "unindent" },
 
-    // (partially) enable vim's `` motion
+    // (partially) enable vim's `` motion (only goes back)
     {
         "keys": ["`", "`"],
         "command": "jump_back",
+        "context": [{"key": "setting.command_mode", "operand": true}]
     }
 ]
