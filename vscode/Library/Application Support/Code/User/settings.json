@@ -36,4 +36,8 @@
     "workbench.editor.tabSizing": "fixed",
     "workbench.editor.tabSizingFixedMinWidth": 160,
     "workbench.editor.tabSizingFixedMaxWidth": 200,
+
+    // Meta
+    "bento.openHackNotebookWithDebugger": false,
+    "biggrep.hideUninteresting.enabled": false,
 }
