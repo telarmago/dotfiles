@@ -14,7 +14,7 @@
     "editor.formatOnPaste": true,
     "extensions.ignoreRecommendations": true,
     "zenMode.fullScreen": false,
-    "diffEditor.renderSideBySide": false,
+    "diffEditor.renderSideBySide": true,
 
     // Layout
     "window.commandCenter": false,
