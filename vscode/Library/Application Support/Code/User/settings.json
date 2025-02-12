@@ -34,8 +34,10 @@
     "workbench.editor.enablePreview": true,
     "workbench.editor.wrapTabs": true,
     "workbench.editor.tabSizing": "fixed",
-    "workbench.editor.tabSizingFixedMinWidth": 160,
+    "workbench.editor.tabSizingFixedMinWidth": 200,
     "workbench.editor.tabSizingFixedMaxWidth": 200,
+    "terminal.integrated.middleClickBehavior": "paste",
+    "terminal.integrated.copyOnSelection": true,
 
     // Meta
     "bento.openHackNotebookWithDebugger": false,
