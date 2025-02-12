@@ -41,6 +41,7 @@
     "terminal.integrated.commandsToSkipShell": [
         "-workbench.action.quickOpenView"
     ],
+    "terminal.integrated.macOptionIsMeta": true,
 
     // Meta
     "bento.openHackNotebookWithDebugger": false,
