@@ -38,6 +38,9 @@
     "workbench.editor.tabSizingFixedMaxWidth": 200,
     "terminal.integrated.middleClickBehavior": "paste",
     "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.commandsToSkipShell": [
+        "-workbench.action.quickOpenView"
+    ],
 
     // Meta
     "bento.openHackNotebookWithDebugger": false,
