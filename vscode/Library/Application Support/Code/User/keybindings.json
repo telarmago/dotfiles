@@ -43,4 +43,20 @@
     { "key": "ctrl+,", "command": "workbench.action.compareEditor.previousChange", "when": "textCompareEditorVisible" },
     { "key": "ctrl+.", "command": "workbench.action.editor.nextChange", "when": "editorTextFocus && !textCompareEditorActive" },
     { "key": "ctrl+,", "command": "workbench.action.editor.previousChange", "when": "editorTextFocus && !textCompareEditorActive" },
+    // undo in integrated terminal
+    { "key": "cmd+z",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "\u001f"
+        },
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "\u001f"
+        },
+        "when": "terminalFocus"
+    }
 ]
