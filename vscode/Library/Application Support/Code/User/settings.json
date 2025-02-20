@@ -46,4 +46,10 @@
     // Meta
     "bento.openHackNotebookWithDebugger": false,
     "biggrep.hideUninteresting.enabled": false,
+    "editor.lightbulb.enabled": "off",
+    "metamate.inlineChat.modelSelection": [
+        "iCodeLlama 3.1 405B",
+        "iCodeLlama 3.1 70B",
+        "Claude 3.5 Sonnet"
+    ],
 }
