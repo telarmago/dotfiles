@@ -1,14 +1,10 @@
 # Aliases
 alias ll='ls -lAG'
-alias la='ls -AG'
 alias ..='cd ..'
-alias resetlaunchpad='defaults write com.apple.dock ResetLaunchPad -bool true \
+alias resetlaunchpad='sudo find 2>/dev/null /private/var/folders/ -type d -name com.apple.dock.launchpad -exec rm -rf {} + \
                       && killall Dock'
-alias hidedesktop='defaults write com.apple.finder CreateDesktop false \
-                   && killall Finder'
-alias showdesktop='defaults write com.apple.finder CreateDesktop true \
-                   && killall Finder'
 alias rg='rg -S'
+
 ## Cleaning
 alias cleanhome='rm -rf {~/.zsh_history,~/.zsh_sessions,~/.lesshst}'
 alias finddots='sudo find . -name "._*" -o -name ".DS_Store"'
@@ -17,12 +13,11 @@ alias deletelogs='sudo rm -rfv /private/var/log/ ~/Library/Logs/ /Library/Logs/'
 alias cleariconcaches='sudo find /private/var/folders/ -name com.apple.dock.iconcache -exec rm {} \;
                        sudo find /private/var/folders/ -name com.apple.iconservices -exec rm -rf {} \;
                        sudo rm -rf /Library/Caches/com.apple.iconservices.store'
-alias dsp='docker system prune'
+
 ## Info
 alias whatsize='du -sh * | sort -h'
-alias sleepinfo='pmset -g log | egrep "Sleep state|Wake from"'
-alias publicip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias localip='ipconfig getifaddr en0'
+
 ## Functions
 deletedots() {
     sudo find . -name '._*' -o -name '.DS_Store' | sed 's/.*/"&"/' | xargs rm -rf
@@ -35,22 +30,20 @@ search() {
 path+=/usr/local/bin/
 path+=/usr/sbin/
 
-# oh-my-zsh
+# For oh-my-zsh
 unset LESS # stops `git branch` from using `less`
 DISABLE_AUTO_UPDATE="true" # uncomment this line before `source $ZSH/oh-my-zsh.sh`
 
-# Delete sections below for oh-my-zsh
+# Delete sections below if oh-my-zsh is installed
 # Pretty prompt
 PROMPT='%~ > '
 
-# Show git information
+# Enable ctrl-s to search forwards
+stty -ixon
+
+# Show git info
 autoload -Uz vcs_info
 precmd() { vcs_info }
-# Format vcs_info_msg_0_ variable
-zstyle ':vcs_info:git:*' formats 'on branch %b'
-# Set up right-side prompt
-setopt prompt_subst
+zstyle ':vcs_info:git:*' formats 'on branch %b' # format vcs_info_msg_0_ variable
+setopt prompt_subst # set up right-side prompt
 RPROMPT=\$vcs_info_msg_0_
-
-# Disables XON/XOFF flow control; allows ctrl-s to search forwards
-stty -ixon
