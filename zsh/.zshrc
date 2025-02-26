@@ -2,7 +2,7 @@
 alias ll='ls -lAG'
 alias ..='cd ..'
 alias resetlaunchpad='sudo find 2>/dev/null /private/var/folders/ -type d -name com.apple.dock.launchpad -exec rm -rf {} + \
-                      && killall Dock'
+                      ; killall Dock'
 alias rg='rg -S'
 
 ## Cleaning
@@ -10,9 +10,9 @@ alias cleanhome='rm -rf {~/.zsh_history,~/.zsh_sessions,~/.lesshst}'
 alias finddots='sudo find . -name "._*" -o -name ".DS_Store"'
 alias dotclean='dot_clean -mv .'
 alias deletelogs='sudo rm -rfv /private/var/log/ ~/Library/Logs/ /Library/Logs/'
-alias cleariconcaches='sudo find /private/var/folders/ -name com.apple.dock.iconcache -exec rm {} \;
-                       sudo find /private/var/folders/ -name com.apple.iconservices -exec rm -rf {} \;
-                       sudo rm -rf /Library/Caches/com.apple.iconservices.store'
+alias cleariconcaches='sudo find /private/var/folders/ -name com.apple.dock.iconcache -exec rm {} \
+                       ; sudo find /private/var/folders/ -name com.apple.iconservices -exec rm -rf {} \
+                       ; sudo rm -rf /Library/Caches/com.apple.iconservices.store'
 
 ## Info
 alias whatsize='du -sh * | sort -h'
