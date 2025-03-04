@@ -31,7 +31,7 @@
     // vim - bind / to normal search
     { "key": "/", "command": "actions.find", "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'" },
     // neovim - bind / to normal search
-    { "key": "/", "command": "actions.find", "when": "editorTextFocus && neovim.mode == 'normal'" }
+    { "key": "/", "command": "actions.find", "when": "editorTextFocus && neovim.mode == 'normal'" },
     // unbreak reset zoom
     { "key": "cmd+0", "command": "workbench.action.zoomReset" },
     // unbreak debug panel
