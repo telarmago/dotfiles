@@ -28,20 +28,21 @@
     // Theme
     "editor.minimap.renderCharacters": false,
     "editor.minimap.showSlider": "always",
-    "workbench.colorTheme": "Material Theme Darker",
+    "workbench.colorTheme": "Material Theme Darker High Contrast",
 
     // Other
     "workbench.editor.enablePreview": true,
     "workbench.editor.wrapTabs": true,
     "workbench.editor.tabSizing": "fixed",
-    "workbench.editor.tabSizingFixedMinWidth": 200,
-    "workbench.editor.tabSizingFixedMaxWidth": 200,
+    "workbench.editor.tabSizingFixedMinWidth": 195,
+    "workbench.editor.tabSizingFixedMaxWidth": 195,
     "terminal.integrated.middleClickBehavior": "paste",
     "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.commandsToSkipShell": [
         "-workbench.action.quickOpenView"
     ],
     "terminal.integrated.macOptionIsMeta": true,
+    "editor.guides.bracketPairs": "active",
 
     // Meta
     "bento.openHackNotebookWithDebugger": false,
@@ -50,6 +51,6 @@
     "metamate.inlineChat.modelSelection": [
         "iCodeLlama 3.1 405B",
         "iCodeLlama 3.1 70B",
-        "Claude 3.5 Sonnet"
+        "Claude 3.7 Sonnet",
     ],
 }
