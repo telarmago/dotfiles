@@ -7,6 +7,7 @@ alias rg='rg -S'
 
 ## Cleaning
 alias cleanhome='rm -rf {~/.zsh_history,~/.zsh_sessions,~/.lesshst}'
+alias cleansublime='rm -rf ~/Library/Application\ Support/Sublime\ Text/Local/Session.sublime_session'
 alias finddots='sudo find . -name "._*" -o -name ".DS_Store"'
 alias dotclean='dot_clean -mv .'
 alias deletelogs='sudo rm -rfv /private/var/log/ ~/Library/Logs/ /Library/Logs/'
