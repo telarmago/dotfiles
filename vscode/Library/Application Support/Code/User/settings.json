@@ -20,6 +20,7 @@
     "window.commandCenter": false,
     "workbench.layoutControl.enabled": false,
     "workbench.activityBar.location": "top",
+    "chat.commandCenter.enabled": false,
 
     // Debug
     "debug.toolBarLocation": "docked",
