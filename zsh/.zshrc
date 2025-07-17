@@ -11,9 +11,10 @@ alias cleansublime='rm -rf ~/Library/Application\ Support/Sublime\ Text/Local/Se
 alias finddots='sudo find . -name "._*" -o -name ".DS_Store"'
 alias dotclean='dot_clean -mv .'
 alias deletelogs='sudo rm -rfv /private/var/log/ ~/Library/Logs/ /Library/Logs/'
-alias cleariconcaches='sudo find /private/var/folders/ -name com.apple.dock.iconcache -exec rm {} \
-                       ; sudo find /private/var/folders/ -name com.apple.iconservices -exec rm -rf {} \
-                       ; sudo rm -rf /Library/Caches/com.apple.iconservices.store'
+alias cleariconcaches='sudo find /private/var/folders/ -name com.apple.dock.iconcache -exec rm {} \;
+                       sudo find /private/var/folders/ -name com.apple.iconservices -exec rm -rf {} \;
+                       sudo rm -rf /Library/Caches/com.apple.iconservices.store \
+                       && killall Finder'
 
 ## Info
 alias whatsize='du -sh * | sort -h'
