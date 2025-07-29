@@ -15,6 +15,7 @@
     "extensions.ignoreRecommendations": true,
     "zenMode.fullScreen": false,
     "diffEditor.renderSideBySide": true,
+    "window.confirmBeforeClose": "always",
 
     // Layout
     "window.commandCenter": false,
