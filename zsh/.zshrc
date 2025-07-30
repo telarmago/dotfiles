@@ -15,6 +15,10 @@ alias cleariconcaches='sudo find /private/var/folders/ -name com.apple.dock.icon
                        sudo find /private/var/folders/ -name com.apple.iconservices -exec rm -rf {} \;
                        sudo rm -rf /Library/Caches/com.apple.iconservices.store \
                        && killall Finder'
+alias hidedesktop='defaults write com.apple.finder CreateDesktop false \
+                   && killall Finder'
+alias showdesktop='defaults write com.apple.finder CreateDesktop true \
+                   && killall Finder'
 
 ## Info
 alias whatsize='du -sh * | sort -h'
