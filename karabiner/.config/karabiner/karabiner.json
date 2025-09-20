@@ -81,7 +81,7 @@
                         ]
                     },
                     {
-                        "description": "caps_lock to escape, caps_lock+hjkl to arrow keys, caps_lock+f to cmd+alt+ctrl+shift+f, caps_lock+d to cmd+alt+ctrl+shift+d",
+                        "description": "caps_lock to escape, caps_lock+hjkl to arrow keys, caps_lock+f/u to cmd+alt+ctrl+shift+f, caps_lock+d/i to cmd+alt+ctrl+shift+d",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -213,7 +213,65 @@
                                     }
                                 ],
                                 "from": {
+                                    "key_code": "u",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f",
+                                        "modifiers": [
+                                            "command",
+                                            "option",
+                                            "control",
+                                            "shift"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "caps_lock pressed",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
                                     "key_code": "d",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "d",
+                                        "modifiers": [
+                                            "command",
+                                            "option",
+                                            "control",
+                                            "shift"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "caps_lock pressed",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "i",
                                     "modifiers": {
                                         "optional": [
                                             "any"
@@ -266,7 +324,7 @@
                                 "type": "basic"
                             }
                         ]
-                    },
+                    }
                     {
                         "description": "fn-h to cmd-alt-ctrl-shift-h",
                         "manipulators": [
