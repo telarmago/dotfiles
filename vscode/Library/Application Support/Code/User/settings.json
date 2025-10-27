@@ -10,12 +10,12 @@
     },
     "editor.multiCursorModifier": "ctrlCmd",
     "window.newWindowDimensions": "inherit",
+    "window.confirmBeforeClose": "always",
     "files.trimTrailingWhitespace": true,
     "editor.formatOnPaste": true,
     "extensions.ignoreRecommendations": true,
     "zenMode.fullScreen": false,
-    "diffEditor.renderSideBySide": true,
-    "window.confirmBeforeClose": "always",
+    "diffEditor.renderSideBySide": true
 
     // Layout
     "window.commandCenter": false,
@@ -38,16 +38,24 @@
     "workbench.editor.tabSizing": "fixed",
     "workbench.editor.tabSizingFixedMinWidth": 195,
     "workbench.editor.tabSizingFixedMaxWidth": 195,
-    "terminal.integrated.middleClickBehavior": "paste",
     "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.commandsToSkipShell": [
         "-workbench.action.quickOpenView"
     ],
     "terminal.integrated.macOptionIsMeta": true,
     "editor.guides.bracketPairs": "active",
+    "editor.lightbulb.enabled": "off",
+    "editor.accessibilitySupport": "off",
 
     // Meta
     "bento.openHackNotebookWithDebugger": false,
-    "biggrep.hideUninteresting.enabled": false,
-    "editor.lightbulb.enabled": "off",
+    "biggrep.hideUninteresting.enabled": true,
+
+    // Devmate
+    "accessibility.openChatEditedFiles": false,
+    "devmate.inline.assertiveness.enable-inline-buttons-highlighted-text": false,
+    "devmate.sidebar.extendedThinkingEnabled": true,
+    "devmate.sidebar.interleavedThinkingEnabled": true,
+    "devmate.sidebar.defaultModel": "GPT-5 Codex",
+    "devmate.sidebar.gpt5.reasoningEffort": "HIGH",
 }
