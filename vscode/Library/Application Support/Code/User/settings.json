@@ -52,6 +52,7 @@
     "biggrep.hideUninteresting.enabled": true,
 
     // Devmate
+    "editor.inlineSuggest.allowSuggestOnTriggerCharacters": true,
     "accessibility.openChatEditedFiles": false,
     "devmate.inline.assertiveness.enable-inline-buttons-highlighted-text": false,
     "devmate.sidebar.extendedThinkingEnabled": true,
