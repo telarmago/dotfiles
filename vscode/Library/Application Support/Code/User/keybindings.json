@@ -4,16 +4,20 @@
     { "key": "ctrl+j", "command": "workbench.action.navigateDown" },
     { "key": "ctrl+k", "command": "workbench.action.navigateUp" },
     { "key": "ctrl+l", "command": "workbench.action.navigateRight" },
+
     // move forward/backward
     { "key": "cmd+[", "command": "workbench.action.navigateBack" },
     { "key": "cmd+]", "command": "workbench.action.navigateForward" },
+
     // indent/outdent
     { "key": "cmd+;", "command": "editor.action.outdentLines" },
     { "key": "cmd+'", "command": "editor.action.indentLines" },
+
     // clear integrated terminal
     { "key": "cmd+k", "command": "workbench.action.terminal.clear", "when": "terminalFocus" },
     // cmd-9 to last tab
     { "key": "cmd+9", "command": "workbench.action.lastEditorInGroup" },
+
     // debug
     { "key": "ctrl+alt+cmd+c", "command": "workbench.action.debug.start", "when": "debuggersAvailable && debugState == 'inactive'" },
     { "key": "ctrl+alt+cmd+c", "command": "workbench.action.debug.continue", "when": "debugState == 'stopped'" },
@@ -23,6 +27,9 @@
     { "key": "ctrl+alt+cmd+o", "command": "workbench.action.debug.stepOut", "when": "debugState == 'stopped'" },
     { "key": "ctrl+alt+cmd+p", "command": "workbench.action.debug.restart", "when": "inDebugMode" },
     { "key": "ctrl+alt+cmd+[", "command": "workbench.action.debug.disconnect", "when": "focusedSessionIsAttach && inDebugMode" },
+
+    // neovim - bind / to normal search
+    { "key": "/", "command": "actions.find", "when": "editorTextFocus && neovim.mode == 'normal'" },
     // vim - stop copy from exiting insert mode in vim
     { "key": "cmd+c", "command": "-extension.vim_cmd+c", "when": "editorTextFocus && vim.active && vim.overrideCopy && vim.use<D-c> && !inDebugRepl" },
     // vim - enable u and ctrl+r to act like system undo/redo
@@ -30,19 +37,20 @@
     { "key": "ctrl+r", "command": "redo", "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'" },
     // vim - bind / to normal search
     { "key": "/", "command": "actions.find", "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'" },
-    // neovim - bind / to normal search
-    { "key": "/", "command": "actions.find", "when": "editorTextFocus && neovim.mode == 'normal'" },
+
     // unbreak reset zoom
     { "key": "cmd+0", "command": "workbench.action.zoomReset" },
     // unbreak debug panel
     { "key": "shift+cmd+d", "command": "-editor.action.copyLinesDownAction", "when": "editorFocus" },
     // unbreak omnisearch
     { "key": "cmd+y", "command": "-redo", "when": "editorTextFocus && !editorReadonly" },
+
     // ctrl-./, - next/previous modification
     { "key": "ctrl+.", "command": "workbench.action.compareEditor.nextChange", "when": "textCompareEditorVisible" },
     { "key": "ctrl+,", "command": "workbench.action.compareEditor.previousChange", "when": "textCompareEditorVisible" },
     { "key": "ctrl+.", "command": "workbench.action.editor.nextChange", "when": "editorTextFocus && !textCompareEditorActive" },
     { "key": "ctrl+,", "command": "workbench.action.editor.previousChange", "when": "editorTextFocus && !textCompareEditorActive" },
+
     // undo in integrated terminal
     { "key": "cmd+z",
         "command": "workbench.action.terminal.sendSequence",
@@ -59,6 +67,7 @@
         },
         "when": "terminalFocus"
     },
+
     // neovim - unbreak z chords in Interactive Smartlog
     { "key": "z c", "command": "-list.collapse", "when": "!editorTextFocus && !inputFocus" },
     { "key": "z m", "command": "-list.collapseAll", "when": "!editorTextFocus && !inputFocus" },
@@ -67,5 +76,8 @@
     { "key": "z o", "command": "-list.expand", "when": "!editorTextFocus && !inputFocus" },
     { "key": "z shift+o", "command": "-list.expand", "when": "!editorTextFocus && !inputFocus" },
     { "key": "z a", "command": "-list.toggleExpand", "when": "!editorTextFocus && !inputFocus" },
-    { "key": "z shift+a", "command": "-list.toggleExpand", "when": "!editorTextFocus && !inputFocus" }
+    { "key": "z shift+a", "command": "-list.toggleExpand", "when": "!editorTextFocus && !inputFocus" },
+
+    // isl
+    { "key": "shift+cmd+i", "command": "sapling.open-isl" }
 ]
