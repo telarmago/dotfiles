@@ -79,5 +79,20 @@
     { "key": "z shift+a", "command": "-list.toggleExpand", "when": "!editorTextFocus && !inputFocus" },
 
     // isl
-    { "key": "shift+cmd+i", "command": "sapling.open-isl" }
+    {
+        "key": "shift+cmd+i",
+        "command": "sapling.open-isl"
+    },
+
+    // terminal to window/panel
+    {
+        "key": "shift+cmd+1",
+        "command": "workbench.action.terminal.moveToTerminalPanel",
+        "when": "terminalEditorActive && terminalHasBeenCreated || terminalEditorActive && terminalProcessSupported"
+    },
+    {
+        "key": "shift+cmd+2",
+        "command": "workbench.action.terminal.moveIntoNewWindow",
+        "when": "terminalHasBeenCreated && terminalIsOpen || terminalIsOpen && terminalProcessSupported"
+    }
 ]
