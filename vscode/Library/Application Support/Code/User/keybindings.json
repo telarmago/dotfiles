@@ -84,15 +84,25 @@
         "command": "sapling.open-isl"
     },
 
-    // terminal to window/panel
+    // move terminal
     {
-        "key": "shift+cmd+1",
+        "key": "ctrl+shift+1",
         "command": "workbench.action.terminal.moveToTerminalPanel",
-        "when": "terminalEditorActive && terminalHasBeenCreated || terminalEditorActive && terminalProcessSupported"
+        "when": "terminalIsOpen"
     },
     {
-        "key": "shift+cmd+2",
+        "key": "ctrl+shift+2",
+        "command": "workbench.action.terminal.moveToEditor",
+        "when": "terminalIsOpen"
+    },
+    {
+        "key": "ctrl+shift+3",
         "command": "workbench.action.terminal.moveIntoNewWindow",
-        "when": "terminalHasBeenCreated && terminalIsOpen || terminalIsOpen && terminalProcessSupported"
+        "when": "terminalIsOpen"
+    },
+    // unbind conflict
+    {
+        "key": "ctrl+shift+2",
+        "command": "-workbench.action.terminal.sendSequence",
     }
 ]
