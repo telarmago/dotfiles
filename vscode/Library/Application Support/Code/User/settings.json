@@ -60,4 +60,9 @@
     "devmate.sidebar.interleavedThinkingEnabled": true,
     "devmate.sidebar.defaultModel": "GPT-5 Codex",
     "devmate.sidebar.gpt5.reasoningEffort": "HIGH",
+    "terminal.integrated.showDevmateSelectionButton": false,
+    "devmate.sidebar.open-on-startup": false,
+
+    // Temp
+    "workbench.statusBar.visible": false
 }
