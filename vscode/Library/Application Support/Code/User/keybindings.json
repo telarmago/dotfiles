@@ -95,14 +95,21 @@
         "command": "workbench.action.terminal.moveToEditor",
         "when": "terminalIsOpen"
     },
+    // unbind conflict
+    {
+        "key": "ctrl+shift+2",
+        "command": "-workbench.action.terminal.sendSequence",
+    },
     {
         "key": "ctrl+shift+3",
         "command": "workbench.action.terminal.moveIntoNewWindow",
         "when": "terminalIsOpen"
     },
-    // unbind conflict
+
+    // create terminal in new tab
     {
-        "key": "ctrl+shift+2",
-        "command": "-workbench.action.terminal.sendSequence",
+        "key": "shift+alt+`",
+        "command": "workbench.action.createTerminalEditor",
+        "when": "terminalProcessSupported"
     }
 ]
