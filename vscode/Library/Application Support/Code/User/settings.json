@@ -61,6 +61,7 @@
     "devmate.sidebar.defaultModel": "GPT-5 Codex",
     "devmate.sidebar.gpt5.reasoningEffort": "HIGH",
     "terminal.integrated.showDevmateSelectionButton": false,
+    "terminal.integrated.showDevmateQuickFixButton": false
     "devmate.sidebar.open-on-startup": false,
 
     // Temp
