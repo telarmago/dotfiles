@@ -111,5 +111,15 @@
         "key": "shift+alt+`",
         "command": "workbench.action.createTerminalEditor",
         "when": "terminalProcessSupported"
+    },
+
+    // claude code shift-enter newline
+    {
+        "key": "shift+enter",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "\u001b\r"
+        },
+        "when": "terminalFocus"
     }
 ]
