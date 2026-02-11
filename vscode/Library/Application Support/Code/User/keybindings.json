@@ -121,5 +121,27 @@
             "text": "\u001b\r"
         },
         "when": "terminalFocus"
-    }
+    },
+
+    // swap fullscreen and zen mode keybinds
+    {
+        "key": "ctrl+cmd+f",
+        "command": "-workbench.action.toggleFullScreen",
+        "when": "!isIOS"
+    },
+    {
+        "key": "ctrl+shift+cmd+f",
+        "command": "-workbench.action.toggleZenMode",
+        "when": "!isAuxiliaryWindowFocusedContext"
+    },
+    {
+        "key": "ctrl+cmd+f",
+        "command": "workbench.action.toggleZenMode",
+        "when": "!isAuxiliaryWindowFocusedContext"
+    },
+    {
+        "key": "ctrl+shift+cmd+f",
+        "command": "workbench.action.toggleFullScreen",
+        "when": "!isIOS"
+    },
 ]
