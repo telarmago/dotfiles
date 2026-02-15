@@ -108,9 +108,20 @@
 
     // create terminal in new tab (editor area)
     {
-        "key": "shift+alt+`",
+        "key": "ctrl+`",
         "command": "workbench.action.createTerminalEditor",
         "when": "terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "-workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    // toggle terminal
+    {
+        "key": "ctrl+shift+`",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
     },
 
     // claude code - shift-enter new line
