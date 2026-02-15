@@ -78,13 +78,13 @@
     { "key": "z a", "command": "-list.toggleExpand", "when": "!editorTextFocus && !inputFocus" },
     { "key": "z shift+a", "command": "-list.toggleExpand", "when": "!editorTextFocus && !inputFocus" },
 
-    // isl
+    // open ISL
     {
         "key": "shift+cmd+i",
         "command": "sapling.open-isl"
     },
 
-    // move terminal
+    // move terminal locations
     {
         "key": "ctrl+shift+1",
         "command": "workbench.action.terminal.moveToTerminalPanel",
@@ -95,25 +95,25 @@
         "command": "workbench.action.terminal.moveToEditor",
         "when": "terminalIsOpen"
     },
-    // unbind conflict
-    {
-        "key": "ctrl+shift+2",
-        "command": "-workbench.action.terminal.sendSequence",
-    },
     {
         "key": "ctrl+shift+3",
         "command": "workbench.action.terminal.moveIntoNewWindow",
         "when": "terminalIsOpen"
     },
+    // unbind conflict
+    {
+        "key": "ctrl+shift+2",
+        "command": "-workbench.action.terminal.sendSequence",
+    },
 
-    // create terminal in new tab
+    // create terminal in new tab (editor area)
     {
         "key": "shift+alt+`",
         "command": "workbench.action.createTerminalEditor",
         "when": "terminalProcessSupported"
     },
 
-    // claude code shift-enter newline
+    // claude code - shift-enter new line
     {
         "key": "shift+enter",
         "command": "workbench.action.terminal.sendSequence",
@@ -123,7 +123,7 @@
         "when": "terminalFocus"
     },
 
-    // swap fullscreen and zen mode keybinds
+    // zen mode - cmd-ctrl-f (swap fullscreen and zen mode keybinds)
     {
         "key": "ctrl+cmd+f",
         "command": "-workbench.action.toggleFullScreen",
