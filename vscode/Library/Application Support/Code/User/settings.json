@@ -45,6 +45,7 @@
     ],
     "terminal.integrated.macOptionIsMeta": true,
     "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "terminal.integrated.scrollback": 10000,
     "editor.guides.bracketPairs": "active",
     "editor.lightbulb.enabled": "off",
     "editor.accessibilitySupport": "off",
@@ -65,6 +66,4 @@
     "terminal.integrated.showDevmateSelectionButton": false,
     "terminal.integrated.showDevmateQuickFixButton": false,
     "devmate.sidebar.open-on-startup": false,
-
-    // Temp
 }
