@@ -24,6 +24,8 @@
     "workbench.activityBar.location": "top",
     "chat.commandCenter.enabled": false,
     "workbench.statusBar.visible": false,
+    "window.title": " ",
+    "terminal.integrated.tabs.description": "",
 
     // Debug
     "debug.toolBarLocation": "docked",
@@ -50,8 +52,6 @@
     "editor.guides.bracketPairs": "active",
     "editor.lightbulb.enabled": "off",
     "editor.accessibilitySupport": "off",
-    "window.title": " ",
-    "terminal.integrated.tabs.description": "",
 
     // Meta
     "bento.openHackNotebookWithDebugger": false,
