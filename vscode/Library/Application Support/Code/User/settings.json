@@ -50,6 +50,8 @@
     "editor.guides.bracketPairs": "active",
     "editor.lightbulb.enabled": "off",
     "editor.accessibilitySupport": "off",
+    "window.title": " ",
+    "terminal.integrated.tabs.description": "",
 
     // Meta
     "bento.openHackNotebookWithDebugger": false,
