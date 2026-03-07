@@ -37,11 +37,16 @@
     "workbench.colorTheme": "Material Theme Darker High Contrast",
 
     // Other
+    "editor.guides.bracketPairs": "active",
+    "editor.lightbulb.enabled": "off",
+    "editor.accessibilitySupport": "off",
     "workbench.editor.enablePreview": true,
     "workbench.editor.wrapTabs": true,
-    "workbench.editor.tabSizing": "fixed",
-    "workbench.editor.tabSizingFixedMinWidth": 195,
-    "workbench.editor.tabSizingFixedMaxWidth": 195,
+    // "workbench.editor.tabSizing": "fixed",
+    // "workbench.editor.tabSizingFixedMinWidth": 160,
+    // "workbench.editor.tabSizingFixedMaxWidth": 160,
+
+    // Terminal
     "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.commandsToSkipShell": [
         "-workbench.action.quickOpenView"
@@ -49,14 +54,11 @@
     "terminal.integrated.macOptionIsMeta": true,
     "terminal.integrated.enableMultiLinePasteWarning": "never",
     "terminal.integrated.scrollback": 10000,
-    "editor.guides.bracketPairs": "active",
-    "editor.lightbulb.enabled": "off",
-    "editor.accessibilitySupport": "off",
 
     // Meta
-    "bento.openHackNotebookWithDebugger": false,
     "biggrep.hideUninteresting.enabled": true,
     "hg.openSidebarOnMergeConflictsMode": "Never",
+    "bento.openHackNotebookWithDebugger": false,
 
     // Devmate
     "workbench.secondarySideBar.defaultVisibility": "hidden",
