@@ -54,10 +54,12 @@
     "terminal.integrated.macOptionIsMeta": true,
     "terminal.integrated.enableMultiLinePasteWarning": "never",
     "terminal.integrated.scrollback": 10000,
+    "terminal.integrated.initialHint": false,
 
     // Meta
     "biggrep.hideUninteresting.enabled": true,
     "hg.openSidebarOnMergeConflictsMode": "Never",
+    "sapling.showDiffComments": false,
     "bento.openHackNotebookWithDebugger": false,
 
     // Devmate
