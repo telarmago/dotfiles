@@ -3,7 +3,7 @@
     "editor.fontFamily": "SF Mono",
     "editor.fontLigatures": true,
     "editor.fontSize": 14,
-    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontSize": 16,
     "editor.rulers": [80],
     "files.associations": {
         "*.txt": "markdown",
@@ -61,17 +61,18 @@
     "hg.openSidebarOnMergeConflictsMode": "Never",
     "sapling.showDiffComments": false,
     "bento.openHackNotebookWithDebugger": false,
+    "ondemand.mounts": {
+        "www_fbsource_configerator": [
+            "fbsource",
+            "www",
+            "configerator"
+        ]
+    },
+    "terminal.integrated.cwd": "/data/sandcastle/boxes/fbsource",
 
     // Devmate
-    "workbench.secondarySideBar.defaultVisibility": "hidden",
-    "editor.inlineSuggest.allowSuggestOnTriggerCharacters": true,
-    "accessibility.openChatEditedFiles": false,
-    "devmate.inline.assertiveness.enable-inline-buttons-highlighted-text": false,
-    "devmate.sidebar.extendedThinkingEnabled": true,
-    "devmate.sidebar.interleavedThinkingEnabled": true,
-    "devmate.sidebar.defaultModel": "Claude Opus 4.5",
-    "devmate.sidebar.gpt5.reasoningEffort": "HIGH",
-    "terminal.integrated.showDevmateSelectionButton": false,
-    "terminal.integrated.showDevmateQuickFixButton": false,
-    "devmate.sidebar.open-on-startup": false,
-}
+    // "workbench.secondarySideBar.defaultVisibility": "hidden",
+    // "terminal.integrated.showDevmateSelectionButton": false,
+    // "terminal.integrated.showDevmateQuickFixButton": false,
+    // "editor.inlineSuggest.allowSuggestOnTriggerCharacters": true,
+    // "accessibility.openChatEditedFiles": false,
