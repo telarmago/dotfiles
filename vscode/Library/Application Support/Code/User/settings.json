@@ -61,18 +61,11 @@
     "hg.openSidebarOnMergeConflictsMode": "Never",
     "sapling.showDiffComments": false,
     "bento.openHackNotebookWithDebugger": false,
+    "terminal.integrated.cwd": "/data/sandcastle/boxes/fbsource",
     "ondemand.mounts": {
         "www_fbsource_configerator": [
             "fbsource",
-            "www",
+            // "fbsource/www",
             "configerator"
         ]
-    },
-    "terminal.integrated.cwd": "/data/sandcastle/boxes/fbsource",
-
-    // Devmate
-    // "workbench.secondarySideBar.defaultVisibility": "hidden",
-    // "terminal.integrated.showDevmateSelectionButton": false,
-    // "terminal.integrated.showDevmateQuickFixButton": false,
-    // "editor.inlineSuggest.allowSuggestOnTriggerCharacters": true,
-    // "accessibility.openChatEditedFiles": false,
+    }
