@@ -17,7 +17,7 @@
     // Vim
     "ignored_packages":
     [
-    // "Vintage"
+        "Vintage",
     ],
     "vintage_start_in_command_mode": true,
 
@@ -26,4 +26,8 @@
     "color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
     // Material theme
     "material_theme_small_tab": true,
+    // NeoVintagenous
+    "vintageous_use_super_keys": false,
+
+    // Temp
 }
