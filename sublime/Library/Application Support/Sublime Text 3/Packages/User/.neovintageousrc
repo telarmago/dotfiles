@@ -1,4 +1,9 @@
+" make j/k move by display line
 nnoremap j gj
 nnoremap k gk
 vnoremap j gj
 vnoremap k gk
+
+" workaround: 0/$ don't update xpos
+nnoremap 0 0h
+nnoremap $ $l
